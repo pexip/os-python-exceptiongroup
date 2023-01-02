@@ -1,0 +1,44 @@
+python-exceptiongroup (1.1.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 1.1.0 (Closes: #1026939)
+  * Update patches
+    - Drop 0002-pyproject-force-version.patch (not needed)
+    - Drop 0003-Cannot-wrap-BaseException-in-ExceptionGroup.patch
+      (merged upstream)
+  * Set SETUPTOOLS_SCM_PRETEND_VERSION
+  * Mark python3-pytest with <!nocheck> to prevent dependency loop
+
+ -- Timo Röhling <roehling@debian.org>  Mon, 02 Jan 2023 23:45:35 +0100
+
+python-exceptiongroup (1.0.4-4) unstable; urgency=medium
+
+  * Team upload.
+  * python3-trio (<< 0.22) has a conflicting MultiError implementation
+    which breaks in Python 3.10
+
+ -- Timo Röhling <roehling@debian.org>  Thu, 15 Dec 2022 13:21:00 +0100
+
+python-exceptiongroup (1.0.4-3) unstable; urgency=medium
+
+  * Team upload.
+  * Fix test suite
+  * Bump Standards-Version to 4.6.1
+  * Use dh-sequence-python3 instead of --with python3
+  * Use autopkgtest-pkg-pybuild
+  * Fix Vcs-* URLs
+
+ -- Timo Röhling <roehling@debian.org>  Fri, 09 Dec 2022 22:54:28 +0100
+
+python-exceptiongroup (1.0.4-2) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 08 Dec 2022 12:10:51 -0400
+
+python-exceptiongroup (1.0.4-1) experimental; urgency=low
+
+  * Initial release; Closes: #1011552
+
+ -- Agathe Porte <debian@microjoe.org>  Sun, 04 Dec 2022 22:46:56 +0200
