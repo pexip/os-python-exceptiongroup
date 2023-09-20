@@ -1,0 +1,29 @@
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -1,6 +1,6 @@
+ [build-system]
+-requires = ["flit_scm"]
+-build-backend = "flit_scm:buildapi"
++requires = ["flit_core"]
++build-backend = "flit_core.buildapi"
+ 
+ [project]
+ name = "exceptiongroup"
+
+--- /dev/null
++++ b/src/exceptiongroup/_version.py
+@@ -0,0 +1,2 @@
++__version__ = version = '1.1.0'
++__version_tuple__ = version_tuple = (1, 1, 0)
+--- a/src/exceptiongroup/__init__.py
++++ b/src/exceptiongroup/__init__.py
+@@ -12,7 +12,8 @@
+ import sys
+ 
+ from ._catch import catch
+-from ._version import version as __version__  # noqa: F401
++
++__version__ = '1.1.0'
+ 
+ if sys.version_info < (3, 11):
+     from ._exceptions import BaseExceptionGroup, ExceptionGroup

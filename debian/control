@@ -11,7 +11,7 @@ Build-Depends:
  dh-sequence-python3,
  pybuild-plugin-pyproject,
  python3-all,
- python3-flit-scm,
+ flit,
  python3-pytest <!nocheck>,
 Standards-Version: 4.6.1
 Testsuite: autopkgtest-pkg-pybuild
