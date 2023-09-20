@@ -1,8 +1,9 @@
 Source: python-exceptiongroup
 Section: python
 Priority: optional
-Maintainer: Debian Python Team <team+python@tracker.debian.org>
-Uploaders:
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Debian Python Team <team+python@tracker.debian.org>
+XSBC-Pexip-Original-Uploaders:
  Agathe Porte <debian@microjoe.org>,
 Build-Depends:
  debhelper-compat (= 13),
@@ -18,6 +19,7 @@ Vcs-Git: https://salsa.debian.org/python-team/packages/python-exceptiongroup.git
 Vcs-Browser: https://salsa.debian.org/python-team/packages/python-exceptiongroup
 Homepage: https://github.com/agronholm/exceptiongroup/
 Rules-Requires-Root: no
+XS-Pexip-Upstream: http://deb.debian.org/debian/ bookworm
 
 Package: python3-exceptiongroup
 Architecture: all
